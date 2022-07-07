@@ -149,11 +149,25 @@ body {
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
-    color: var(--accent-color);
+.site-nav .link .current {
+    /* color: var(--accent-color);
     min-width: 42px;
-    min-height: 4px;
+    min-height: 4px; */
+    position: relative;
 }
+
+.site-nav .link .current::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 48px;
+    height: 4px;
+    
+    background-color:red;
+    border-radius: 2px;
+} 
+
 
 /* auth-icons */
 .contact-icon {
