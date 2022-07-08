@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body>
+<body data-body>
   <header class="page-header">
     <div class="page container">
       <nav class="main-nav">
@@ -48,7 +48,7 @@
     <section class="section hero-section">
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn" type="button">Замовити послугу</button>
+        <button class="btn" type="button" data-modal-open>Замовити послугу</button> 
       </div>
     </section>
 
@@ -383,16 +383,14 @@
     </div>
   </footer>
 
-  <!--Модальне вікно-->
-    <div class="backdrop">
+  <!--Modal-window-->
+    <div class="backdrop is-hidden" data-modal> 
       <div class="modal">
-        <button class="modal-close-btn" type="button">
-          <svg width="30" height="30">
+        <button class="modal-close-btn" type="button" data-modal-close> 
+          <svg width="11" height="11">
             <use href="./images/images-icons/cros-close.svg#icon-cros-close">
-
             </use>
           </svg>
-
         </button>
       </div>
     </div>
