@@ -117,7 +117,6 @@ body {
 /* site nav */
 .link {
     text-decoration: none;
-    position:relative;
 }
 
 .site-nav {
@@ -764,7 +763,9 @@ body {
 
 .portfolio-positions {
     text-decoration: none;
-    
+    position:relative;
+    overflow: hidden;
+
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -784,8 +785,14 @@ body {
     margin-bottom: 0;
 }
 
+/* .photo {
+    position: relative;
+    overflow: hidden;
+} */
+
 .portfolio-overlay {
     display: flex;
+
     align-items: center;
     justify-content: center;
 }
