@@ -763,13 +763,10 @@ body {
 
 .portfolio-positions {
     text-decoration: none;
-    position:relative;
-    overflow: hidden;
-
+    
     transition-property: box-shadow;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .portfolio-positions:hover,
@@ -785,33 +782,26 @@ body {
     margin-bottom: 0;
 }
 
-/* .photo {
+.portfolio-relative {
     position: relative;
     overflow: hidden;
-} */
-
-.portfolio-overlay {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
 }
 
-.portfolio-description {
+.portfolio-overlay {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
 
     transform: translateY(100%);
-
+   
+    display: flex;  
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 100%;
     padding: 63px 24px;
     margin-bottom: 0;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.56;
     
-    color: var(--secondary-background-color);
     background-color: rgba(33, 150, 243, 0.9);
 
     transition-property: transform;
@@ -819,7 +809,15 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover .portfolio-description {
+.portfolio-description {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    
+    color: var(--secondary-background-color);
+}
+
+.portfolio-positions:hover .portfolio-overlay {
     transform: translateY(0);
 }
 
