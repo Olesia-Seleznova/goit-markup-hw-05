@@ -454,6 +454,8 @@ body {
 }
 
 .photo {
+    width: 370px;
+    height: 295px;
     background-color: var(--primary-text-color);
 }
 
